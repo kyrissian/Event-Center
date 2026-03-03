@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*****Navigation Bar*****/
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4259bd;
+  padding: 10px;
+  background: rgba(66, 89, 189, 0.88);
+  backdrop-filter: blur(4px);
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 30px 15px;
+}
+
+.navbar a:hover {
+  color: darkgrey;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+main {
+  background: url("https://images.pexels.com/photos/6188194/pexels-photo-6188194.jpeg")
+    no-repeat center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  padding-left: 80px;
+  padding-bottom: 80px;
+  align-items: center;
+  flex: 1;
+}
+
+table {
+  border-collapse: collapse;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  color: #4259bd;
+  font-weight: bold;
+}
+
+th {
+  background: #4259bd;
+  color: #fff;
+}
+
+.menu {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.menu h2 {
+  margin-top: 0px;
+  color: darkslategrey;
+  text-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
+}
+
+.site-footer {
+  background-color: #4259bd;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 599px) {
+  .event-grid {
+    grid-template-columns: repeat(1, 350px);
+    gap: 20px;
+  }
+
+  .site-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+}
