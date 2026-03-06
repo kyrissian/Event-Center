@@ -47,6 +47,8 @@ body {
   margin: 0 10px;
 }
 
+/*****MAIN CONTENT*****/
+
 main {
   background: url("https://images.pexels.com/photos/6188194/pexels-photo-6188194.jpeg")
     no-repeat center;
@@ -58,6 +60,8 @@ main {
   padding-bottom: 80px;
   align-items: center;
   flex: 1;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 table {
@@ -94,6 +98,7 @@ th {
   text-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
 }
 
+/**** footer ****/
 .site-footer {
   background-color: #4259bd;
   color: #fff;
@@ -108,12 +113,13 @@ th {
   font-size: 20px;
 }
 
-@media screen and (max-width: 599px) {
-  .event-grid {
-    grid-template-columns: repeat(1, 350px);
-    gap: 20px;
-  }
+.nav-contact {
+  white-space: nowrap;
+}
 
+/*****responsive - media query *****/
+
+@media screen and (max-width: 599px) {
   .site-header {
     display: flex;
     flex-direction: column;
@@ -126,5 +132,43 @@ th {
 
   .navbar li {
     margin: 10px 0;
+  }
+
+  .menu {
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 200px;
+  }
+
+  .menu h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+  }
+
+  .site-footer {
+    padding: 15px;
+    font-size: 0.9em;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .menu {
+    width: 100%;
+    padding: 0 10px;
+    align-items: stretch;
+  }
+  table {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
   }
 }

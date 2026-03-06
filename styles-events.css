@@ -93,6 +93,15 @@ h2 {
   border-radius: 10px;
 }
 
+/***** Buy tickets button *****/
+.buy-tickets a {
+  text-decoration: none;
+  color: #4259bd;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+/*** bottom paragraph ***/
 .check-later p {
   text-align: center;
   font-size: 2em;
@@ -100,6 +109,8 @@ h2 {
   text-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
   margin-bottom: 100px;
 }
+
+/***** Footer *****/
 
 .site-footer {
   background-color: #4259bd;

@@ -17,6 +17,7 @@ body {
   align-items: center;
   background-color: #4259bd;
   padding: 10px;
+  width: 100%;
 }
 
 .logo a {
@@ -56,13 +57,18 @@ body {
 }
 
 .welcome {
-  background-color: #5fb8ff;
-  border-radius: 25px;
+  background: url("https://longbeachcc-2021.s3.amazonaws.com/images/arena-2__hero.jpeg?mtime=20210524204746&focal=none");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
   color: white;
   text-align: center;
   margin-top: 50px;
-  padding: 40px 20px;
   transition: 0.3s ease-in-out;
+  height: 450px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .welcome:hover {
@@ -90,6 +96,7 @@ body {
   text-transform: uppercase;
 }
 
+/***** Event Cards *****/
 .events {
   margin-top: 60px;
   border-radius: 25px;
@@ -101,7 +108,6 @@ h2 {
   font-size: 3rem;
   font-weight: 900;
   color: var(--accent);
-
   letter-spacing: 3px;
   margin: 3rem 0 2rem;
   text-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
@@ -147,9 +153,18 @@ h2 {
   font-size: 1.2em;
   background-color: #4259bd;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
+/***** Buy tickets button *****/
+.buy-tickets a {
+  text-decoration: none;
+  color: #4259bd;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+/***** view-all button *****/
 .view-all {
   display: flex;
   justify-content: center;
