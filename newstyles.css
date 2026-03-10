@@ -1,0 +1,513 @@
+/* ===== BASE ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* ===== HEADER & NAV ===== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4259bd;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+}
+
+/* menu.html uses a frosted glass effect */
+.site-header.frosted {
+  background: rgba(66, 89, 189, 0.88);
+  backdrop-filter: blur(4px);
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 30px 15px;
+}
+
+.navbar a:hover {
+  color: #a0aec0;
+}
+
+.nav-contact {
+  white-space: nowrap;
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 8px;
+  margin-right: 10px;
+  z-index: 200;
+}
+
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* ===== MAIN ===== */
+main {
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+.site-main {
+  flex: 1;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--accent);
+  letter-spacing: 3px;
+  margin: 3rem 0 2rem;
+  text-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
+}
+
+/* ===== HOME HERO ===== */
+.welcome {
+  background: url("https://longbeachcc-2021.s3.amazonaws.com/images/arena-2__hero.jpeg?mtime=20210524204746&focal=none")
+    center / cover;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  transition: box-shadow 0.3s ease-in-out;
+  height: 450px;
+  width: 100%;
+}
+
+.welcome:hover {
+  box-shadow:
+    5px 5px 0 0 #289fed,
+    10px 10px 0 0 #5fb8ff,
+    15px 15px 0 0 #a1d8ff,
+    20px 20px 0 0 #cae6ff,
+    25px 25px 0 0 #e1eeff;
+}
+
+.welcome h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  padding-top: 160px;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+
+/* ===== EVENT SECTIONS ===== */
+.events {
+  margin-top: 60px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* ===== EVENT GRID — default (index + gallery: fixed 3-col grid) ===== */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  margin: 20px auto 0;
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+  padding: 0 20px;
+}
+
+/* events.html uses a flex-wrap layout for variable card counts */
+.events-flex .event-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 20px 60px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== EVENT CARDS ===== */
+.event-card {
+  background-color: #4259bd;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.events-flex .event-card {
+  width: 280px;
+}
+
+.event-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.event-card a {
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.event-card a:visited {
+  color: #c0d0ff;
+}
+
+/* ===== BUTTONS ===== */
+.buy-tickets {
+  background: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.buy-tickets a {
+  text-decoration: none;
+  color: #4259bd;
+  font-weight: bold;
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #4259bd;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-all a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.back-to-top {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.back-to-top a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  background-color: #4259bd;
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.back-to-top a:hover {
+  background-color: #2f44a0;
+}
+
+/* ===== CHECK LATER ===== */
+.check-later p {
+  text-align: center;
+  font-size: 1.5em;
+  color: #e2e8f0;
+  text-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  min-width: 280px;
+  margin: 40px auto 80px;
+  background-color: #5fb8ff;
+  border-radius: 10px;
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #4259bd;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #2f44a0;
+}
+
+/* ===== LOCATION PAGE ===== */
+iframe {
+  display: block;
+  margin: 30px auto 20px;
+  max-width: 100%;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.location-info {
+  text-align: center;
+  margin: 10px auto 40px;
+  color: #e2e8f0;
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
+.location-info h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-shadow: 0 4px 10px rgba(0, 240, 255, 0.3);
+  margin-bottom: 0.5rem;
+}
+
+/* ===== MENU PAGE ===== */
+.menu {
+  background: url("https://images.pexels.com/photos/6188194/pexels-photo-6188194.jpeg")
+    no-repeat center / cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 60px 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  color: #4259bd;
+  font-weight: bold;
+}
+
+th {
+  background: #4259bd;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu h2 {
+  margin-top: 0;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  letter-spacing: 2px;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background-color: #4259bd;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  color: var(--accent);
+  transform: scale(1.3);
+  transition: all 0.3s ease;
+}
+
+/* ===== RESPONSIVE — Tablet ===== */
+@media screen and (max-width: 1000px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Here we show the hamburguer */
+  }
+
+  .navbar {
+    display: none; /* Here we hide the navbar */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #4259bd;
+    z-index: 100;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar.open {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar a {
+    display: block;
+    padding: 14px 24px;
+    font-size: 1rem;
+  }
+
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .contact-form {
+    width: 80%;
+    padding: 20px;
+  }
+
+  iframe {
+    width: 95%;
+    height: 300px;
+  }
+
+  .menu {
+    padding: 60px 60px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+/* ===== RESPONSIVE — Mobile ===== */
+@media screen and (max-width: 599px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .events-flex .event-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .welcome h1 {
+    font-size: 2rem;
+    padding-top: 140px;
+  }
+}

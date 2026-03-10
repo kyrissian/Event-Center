@@ -203,7 +203,36 @@ h2 {
   transition: all 0.3s ease;
 }
 
+/**** Hide Hamburger menu on full screen *****/
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+/***** RESPONSIVE LAYER *****/
+/***** Media for tablets *****/
 @media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /***** show menu when display box is checked *****/
+  #menu-toggle:checked + .hamburger + nav {
+    display: flex;
+  }
+
   .event-grid {
     grid-template-columns: repeat(2, 350px);
     gap: 20px;
@@ -215,7 +244,19 @@ h2 {
   }
 }
 
+/***** Media for mobiles *****/
 @media screen and (max-width: 599px) {
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    gap: 16px;
+    padding: 16px 0;
+    font-size: 20px;
+  }
+
   .event-grid {
     grid-template-columns: repeat(1, 350px);
     gap: 20px;
@@ -233,5 +274,18 @@ h2 {
 
   .navbar li {
     margin: 10px 0;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /***** show menu when display box is checked *****/
+  #menu-toggle:checked + .hamburger + nav {
+    display: flex;
   }
 }
