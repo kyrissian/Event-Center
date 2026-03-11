@@ -71,7 +71,7 @@ This project demonstrates mastery of **semantic HTML5**, **external CSS3 styling
 *Spring, Summer, and upcoming events organized by season*
 
 ### Gallery Page
-<img width="1057" height="619" alt="GalleryPage" src="https://github.com/user-attachments/assets/c359978e-cbd8-4989-9b1d-175f9d68fbc3" />
+<img width="1246" height="665" alt="GalleryPage" src="https://github.com/user-attachments/assets/b4ba6046-b774-46d4-9bd6-843b8e3b1a57" />
 *CSS Grid photo gallery of past events*
 
 ### Menu Page
@@ -156,10 +156,10 @@ socal-bjj-event-center/
 
 | Name | Role | GitHub |
 |------|------|--------|
-| Kathy Booth | Developer & Designer/Student | [@kyrissian](https://github.com/yourusername) |
-| Juan Medina | SE Staff @Coding Temple | [@theirusername](https://github.com/theirusername) |
-| Allan Ahmed | SE Staff @ Coding Temple | [@theirusername](https://github.com/theirusername) |
-| Nicolas Gutierrez | SE Staff @ Coding Temple | [@theirusername](https://github.com/theirusername) |
+| Kathy Booth | Developer & Designer/Student | N/A |
+| Juan Medina | SE Staff @Coding Temple | N/A |
+| Allan Ahmed | SE Staff @ Coding Temple | N/A |
+| Nicolas Gutierrez | SE Staff @ Coding Temple | N/A |
 
 ---
 
