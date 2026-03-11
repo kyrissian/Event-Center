@@ -111,6 +111,11 @@ main {
   padding-bottom: 40px;
 }
 
+.main-menu {
+  background: url("https://images.pexels.com/photos/6188194/pexels-photo-6188194.jpeg")
+    no-repeat center / cover;
+}
+
 .site-main {
   flex: 1;
   padding: 20px;
@@ -299,7 +304,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 60%;
+  width: 45%;
   min-width: 280px;
   margin: 40px auto 80px;
   background-color: #5fb8ff;
@@ -358,8 +363,6 @@ iframe {
 
 /* ===== MENU PAGE ===== */
 .menu {
-  background: url("https://images.pexels.com/photos/6188194/pexels-photo-6188194.jpeg")
-    no-repeat center / cover;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -487,7 +490,7 @@ th {
   .menu {
     padding: 60px 60px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   #menu-toggle:checked + .hamburger + .navbar {
