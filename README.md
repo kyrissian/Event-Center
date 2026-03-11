@@ -9,9 +9,9 @@
 
 ## 👤 Author
 
-**[Your Name Here]**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: youremail@example.com
+**Kathy Booth**
+- GitHub: [@kyrissian](https://github.com/yourusername)
+- Email: kathy.harsh@gmail.com
 
 ---
 
@@ -63,23 +63,23 @@ This project demonstrates mastery of **semantic HTML5**, **external CSS3 styling
 > **💡 Suggestion:** Add screenshots of each page to a `/screenshots` folder in your repository and update the links below.
 
 ### Home Page
-![Home Page Screenshot](./screenshots/home.png)
+<img width="1261" height="660" alt="HomePage" src="https://github.com/user-attachments/assets/b1028cd5-fe71-49d4-a97b-a012a3b1f323" />
 *Hero banner and upcoming event spotlight cards*
 
 ### Events Page
-![Events Page Screenshot](./screenshots/events.png)
+<img width="1261" height="657" alt="EventsPage" src="https://github.com/user-attachments/assets/d83658ae-31b7-4a13-b34b-af97ffd09b54" />
 *Spring, Summer, and upcoming events organized by season*
 
 ### Gallery Page
-![Gallery Page Screenshot](./screenshots/gallery.png)
+<img width="1057" height="619" alt="GalleryPage" src="https://github.com/user-attachments/assets/c359978e-cbd8-4989-9b1d-175f9d68fbc3" />
 *CSS Grid photo gallery of past events*
 
 ### Menu Page
-![Menu Page Screenshot](./screenshots/menu.png)
+<img width="1269" height="668" alt="MenuPage" src="https://github.com/user-attachments/assets/afca5ca8-a042-4e49-acb8-52ce9c41d969" />
 *Venue snack menu with frosted glass background*
 
 ### Contact Page
-![Contact Page Screenshot](./screenshots/contact.png)
+<img width="1252" height="664" alt="ContactPage" src="https://github.com/user-attachments/assets/c73da263-2ef7-4e27-86f9-65a9158df004" />
 *Inquiry/booking contact form*
 
 ---
@@ -154,12 +154,12 @@ socal-bjj-event-center/
 
 ## 🤝 Collaborators
 
-> **💡 Suggestion:** If you worked with classmates or received help, list them here. Otherwise you can remove this section or note it was a solo project.
-
 | Name | Role | GitHub |
 |------|------|--------|
-| [Your Name] | Developer & Designer | [@yourusername](https://github.com/yourusername) |
-| [Collaborator Name] | [Role] | [@theirusername](https://github.com/theirusername) |
+| Kathy Booth | Developer & Designer/Student | [@kyrissian](https://github.com/yourusername) |
+| Juan Medina | SE Staff @Coding Temple | [@theirusername](https://github.com/theirusername) |
+| Allan Ahmed | SE Staff @ Coding Temple | [@theirusername](https://github.com/theirusername) |
+| Nicolas Gutierrez | SE Staff @ Coding Temple | [@theirusername](https://github.com/theirusername) |
 
 ---
 
